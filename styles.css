@@ -1,0 +1,214 @@
+.claude-main-shifted .flex.min-h-screen.w-full {
+  width: calc(100% - 300px) !important;
+  margin-right: 300px !important;
+}
+
+.claude-main-shifted #preset-sidebar {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f9f9f9;
+  border-left: 1px solid #cbc8ba;
+  padding: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#preset-sidebar h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+#filter-controls {
+  margin-bottom: 15px;
+}
+
+#tag-filter,
+#search-filter {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#preset-list {
+  max-height: calc(100% - 200px);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  width: calc(100% + 10px);
+}
+
+.preset-item {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.preset-name {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.preset-tag {
+  display: inline-block;
+  padding: 2px 5px;
+  background-color: #e1e1e1;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.preset-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.use-preset,
+.edit-preset,
+.delete-preset {
+  padding: 3px 8px;
+  font-size: 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.use-preset {
+  background-color: #10a37f;
+  color: white;
+}
+
+.use-preset:hover {
+  background-color: #0d886c;
+}
+
+.edit-preset {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.edit-preset:hover {
+  background-color: #e0e0e0;
+}
+
+.delete-preset {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.delete-preset:hover {
+  background-color: #ff7875;
+}
+
+#add-preset {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #10a37f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#add-preset:hover {
+  background-color: #0d886c;
+}
+
+#add-preset-popup,
+#edit-preset-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+  width: 300px;
+}
+
+#add-preset-popup h2,
+#edit-preset-popup h2 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#preset-name,
+#preset-text,
+#preset-genre,
+#edit-preset-name,
+#edit-preset-text,
+#edit-preset-genre {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#preset-text,
+#edit-preset-text {
+  height: 100px;
+  resize: vertical;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+#save-preset,
+#update-preset,
+#cancel-preset,
+#cancel-edit {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#save-preset,
+#update-preset {
+  background-color: #10a37f;
+  color: white;
+}
+
+#save-preset:hover,
+#update-preset:hover {
+  background-color: #0d886c;
+}
+
+#cancel-preset,
+#cancel-edit {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+#cancel-preset:hover,
+#cancel-edit:hover {
+  background-color: #e0e0e0;
+}

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Preset Extension",
+  "version": "1.0",
+  "description": "Adds preset functionality to Claude AI",
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
